@@ -10,44 +10,84 @@ body{
     width: 100%;
 }
                 /* Main stuff */
-main{
+.first-page-img{
     height: 200px;
     width: 100%;
     background-color: blueviolet;
+    z-index: -100;
     margin-top: 25px;
 }
 
+main{
+    width: 95%;
+    height: 100vh;
+    margin: 10px auto 0 auto;
+    background-color: #EEEEEE;
+    border: solid 2px grey;
+}
+
+.game-ad{
+    width: 90%;
+    height: 150px;
+    background-color: #3682B3;
+    margin: 10px auto 0 auto;
+    box-shadow: 0px 0px 10px 0px rgba(117,245,255,1);
+}
+
+.more-pls{
+    background-color: #3682B3;
+    height: 75px;
+    width: 150px;
+    border-radius: 15px;
+    margin: 10px auto 0 auto;
+
+}
                 /* Header stuff */
 header{
-    background-color: #B31472;
+    background-color: #3682B3;
     height: 60px;
-    box-shadow: 0px 6px 9px 0px rgba(117,245,255,1);
+    box-shadow: 0px 6px 9px 0px rgba(150, 215, 255,1);
+    z-index: 2;
 }
 
 .border-filler{
-    width: 41px;
-    height: 1px;
     border-top: 2px solid white;
     float: right;
-    transition: 3s;
+}
+
+#second-filler{
+    grid-column-start: 3;
 }
 
 .drop-down-profile{
     position: absolute;
     width: 150px;
     height: 200px;
-    background-color: #B31472;
+    background-color: #3682B3;
     border-radius: 0 0 10px 10px;
     border: 2px solid white;
     border-top: none;
-    top: 60px;
-    right: -155px;
+    top: -230px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 11px 1fr 10px;
+    grid-template-rows: 1px;
+    
+    transition: 0.5s;
+    transition-delay: 0.3s;
 }
+
+/* @keyframes move{
+    0%{
+        transition: 0s;
+    }
+    100%{
+        transition: 1s;
+    }
+} */
 
 .a_dropdown_profile{
     top: 60px;
-    right: initial;
-    transition: 3s;
 }
 
                 /* Icons and fonts */
@@ -61,4 +101,26 @@ i.material-icons{
     padding: 0 10px 0 10px;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.a_profilebox{
+    padding: 0 41px 0 41px !important;
+}
+
+.title-first-page{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-shadow: rgb(54, 130, 179) 3px 0px 0px, rgb(54, 130, 179) 2.83487px 0.981584px 0px, 
+    rgb(54, 130, 179) 2.35766px 1.85511px 0px, rgb(54, 130, 179) 1.62091px 2.52441px 0px, 
+    rgb(54, 130, 179) 0.705713px 2.91581px 0px, rgb(54, 130, 179) -0.287171px 2.98622px 0px, 
+    rgb(54, 130, 179) -1.24844px 2.72789px 0px, rgb(54, 130, 179) -2.07227px 2.16926px 0px, 
+    rgb(54, 130, 179) -2.66798px 1.37182px 0px, rgb(54, 130, 179) -2.96998px 0.42336px 0px, 
+    rgb(54, 130, 179) -2.94502px -0.571704px 0px, rgb(54, 130, 179) -2.59586px -1.50383px 0px, 
+    rgb(54, 130, 179) -1.96093px -2.27041px 0px, rgb(54, 130, 179) -1.11013px -2.78704px 0px, 
+    rgb(54, 130, 179) -0.137119px -2.99686px 0px, rgb(54, 130, 179) 0.850987px -2.87677px 0px, 
+    rgb(54, 130, 179) 1.74541px -2.43999px 0px, 
+    rgb(54, 130, 179) 2.44769px -1.73459px 0px, rgb(54, 130, 179) 2.88051px -0.838247px 0px;
 }
