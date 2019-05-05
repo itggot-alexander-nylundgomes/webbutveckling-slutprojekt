@@ -9,17 +9,23 @@ body{
     height: 100vh;
     width: 100%;
 }
-                /* Main stuff */
+
+
+                                             /* Main stuff */
+
+
 .first-page-img{
     height: 200px;
     width: 100%;
     background-color: blueviolet;
+    z-index: -100;
+    position: relative;
     margin-top: 25px;
 }
 
 main{
     width: 95%;
-    height: 100vh;
+    height: auto;
     margin: 10px auto 0 auto;
     background-color: #EEEEEE;
     border: solid 2px grey;
@@ -29,25 +35,50 @@ main{
     width: 90%;
     height: 150px;
     background-color: #3682B3;
-    margin: 10px auto 0 auto;
+    margin: 0 auto 10px auto;
     box-shadow: 0px 0px 10px 0px rgba(117,245,255,1);
 }
 
 .more-pls{
     background-color: #3682B3;
-    height: 60px;
-    width: 150px;
+    height: 50px;
+    width: 125px;
     border-radius: 15px;
     margin: 10px auto 0 auto;
     box-shadow: 0px 0px 10px 0px rgba(117,245,255,1);
+    margin-bottom: 10px;
 }
-                /* Header stuff */
+
+.game-ad-parent{
+    height: 470px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.a_game-ad-parent{
+    height: 800px;
+}
+
+
+                                                /* Header stuff */ 
+
+
 header{
     background-color: #3682B3;
     height: 60px;
     box-shadow: 0px 6px 9px 0px rgba(150, 215, 255,1);
 }
 
+.border-filler{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#right{
+    grid-column-start: 3;
+}
 
 .drop-down-profile{
     position: absolute;
@@ -58,59 +89,63 @@ header{
     border: 2px solid white;
     border-top: none;
     top: -230px;
-    z-index: 1;
-    
+    z-index: -1;
+
     display: grid;
+    grid-template-rows: 2px;
     grid-template-columns: 10px 1fr 10px;
-<<<<<<< HEAD
-    grid-template-rows: 1px;
-=======
-    grid-template-rows: 20px;
-    grid-template-areas:
-    "filler none filler";
->>>>>>> 76cb8c594fa7e72afc82560c6b2192711bb7dc91
-    
+
     transition: 0.5s;
     transition-delay: 0.3s;
 }
 
-.border-filler{
-    border-top: 2px solid white;
-    grid-area: filler;
-}
-.nav-tool{
-
-}
-.menu-content{
-    height: 100%;
-    width: 100%;
-}
 .a_dropdown_profile{
     top: 60px;
 }
 
-                /* Icons and fonts */
-i#header_icons{
+.menu-items{
+    height: 100%;
+    width: 100%;
+    grid-column: span 3;
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 10px auto;
+    grid-gap: 3px;
+}
+
+.nav-button{
+    background-color: aqua;
+    border-radius: 0 0 5px 0 ;
+}
+
+
+                                                 /* Icons and fonts */
+
+
+i.material-icons{
     color: white;
     font-size: 3rem;
+}
+
+#header_icons{
     float: right;
     vertical-align: middle;
     line-height: 60px;
-    border-left: white 2px solid;
     padding: 0 10px 0 10px;
     display: flex;
     justify-content: center;
     transition: 0.5s;
+    z-index: 100;
+    border-left: white 2px solid;
+
 }
 
 #more{
-    color: white;
-    font-size: 4rem;
-    vertical-align: middle;
-    line-height: 60px;
     display: flex;
     justify-content: center;
-
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 4rem;
 }
 
 .a_profilebox{
@@ -131,4 +166,13 @@ i#header_icons{
     rgb(54, 130, 179) -0.137119px -2.99686px 0px, rgb(54, 130, 179) 0.850987px -2.87677px 0px, 
     rgb(54, 130, 179) 1.74541px -2.43999px 0px, 
     rgb(54, 130, 179) 2.44769px -1.73459px 0px, rgb(54, 130, 179) 2.88051px -0.838247px 0px;
+}
+
+.nav-text{
+    font-size: 25px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
 }

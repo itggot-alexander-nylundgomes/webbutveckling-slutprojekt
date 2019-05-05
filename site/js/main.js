@@ -4,6 +4,9 @@ function dropdown_profile(){
 
     profilebox = document.querySelector(".profilebox")
     profilebox.classList.toggle("a_profilebox")
+}
 
-    
+function dropdown_more(){
+    more = document.querySelector(".game-ad-parent")
+    more.classList.toggle("a_game-ad-parent")
 }
