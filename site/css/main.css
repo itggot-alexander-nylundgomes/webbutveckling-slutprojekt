@@ -87,16 +87,22 @@ main{
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-
-    position: relative;
-    z-index: -100;
 }
 
 #nav-games{
     color: #818181;
     height: 48px;
-    margin: auto 0 auto 0;
+    margin: auto 0 auto 95px;
+}
 
+.side-menu{
+    background-color: blueviolet;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    top: 120px;
 }
 
                                                 /* Header stuff */ 
