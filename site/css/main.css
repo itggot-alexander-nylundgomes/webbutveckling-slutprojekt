@@ -96,13 +96,26 @@ main{
 }
 
 .side-menu{
-    background-color: blueviolet;
+    border: #818181 solid 2px;
+    background-color: white;
     height: 300px;
     width: 200px;
     position: absolute;
     z-index: 1;
-    left: 45%;
+    left: 100%;
     top: 120px;
+    transition: 1s;
+}
+
+.a_side-menu{
+    left: 45%;
+}
+
+.myGame_text{
+    color: black;
+}
+.a_myGame-text{
+    color: blue;
 }
 
                                                 /* Header stuff */ 
