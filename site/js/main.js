@@ -14,16 +14,25 @@ function dropdown_more(){
 function side_menu(){
     side = document.querySelector(".side-menu")
     side.classList.toggle("a_side-menu")
+
+    middle = document.querySelector(".second")
+    middle.classList.toggle("deactivate_mid")
+
+    first = document.querySelector(".first")
+    first.classList.toggle("spin_first")
+
+    third = document.querySelector(".third")
+    third.classList.toggle("spin_third")
+
 }
 
-// function color_switch_game(event){
-//     gameColor = event.target
-//     gameColor.classList.toggle("a_myGame-text")
-// }
+function launch(){
+    launch_text = document.querySelector(".launch_text")
 
-// function registerGameTextClick(myGame_text){
-//     myGame_text.addEventListener("click", myGame_text)
-// }
-
-// gameColor = document.querySelectorAll(".myGame_text")
-// gameColor.forEach(registerGameTextClick)
+    if (launch_text.innerHTMl === "Launch"){
+        launch_text.innerHTMl = "..."
+    }
+    else{
+        launch_text.innerHTMl = "Launch"
+    }
+}

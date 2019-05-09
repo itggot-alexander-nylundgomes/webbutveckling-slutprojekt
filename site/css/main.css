@@ -3,29 +3,60 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    position: relative;
-    z-index: -100;
 }
 
 .wrapper{
     height: 100%;
     width: 100%;
-    position: relative;
-    z-index: -12;
     overflow-x: hidden;
 }
 
 
                                              /* Main stuff */
 
+.first-img-product{
+    height: 200px;
+    margin: 10px 0 0 0;
+}
+
+.launch{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 75px;
+    background-color: #3682B3;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+    border: solid white 3px;
+    box-shadow: 0px 0px 21px 0px rgba(255,76,159,1);
+}
+
+.myGame-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 120px 120px;
+    grid-row-gap: 10px;
+    width: 100vw;
+    border: none;
+    border-top: solid 2px grey;
+    border-bottom: solid 2px grey;
+
+}
+
+.img-product{
+    height: 95%;
+    width: 95%;
+    margin: 2.5%;
+    box-shadow: 0px 0px 21px 0px rgba(98,150,174,0.89);
+}
 
 .first-page-img{
     height: 200px;
     width: 100%;
-    z-index: -100;
-    position: relative;
     margin-top: 25px;
     background-image: url(../../misc/Namnlöst-1.jpg);
+    box-shadow: 0px 0px 33px 12px rgba(98,150,174,0.89);
+    border: white solid 4px;
 }
 
 main{
@@ -39,15 +70,16 @@ main{
 #lib-main{
     display: flex;
     flex-wrap: wrap;
-
-    position: relative;
-    z-index: -100;
 }
 
-.myGames:nth-child(even){
-    background-color: #818181;
-    margin: 10px 20px 10px auto; 
+.myGames:nth-child(1){
+    background-image: url(../img/fallout76@150px-X-175px.jpg)
 }
+
+.myGames:nth-child(2){
+    background-image: url(../img/candycrush@150px-X-175px.png)
+}
+
 .myGames{
     height: 175px;
     width: 150px;
@@ -88,18 +120,38 @@ main{
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    z-index: -4;
 }
 
-#nav-games{
-    color: #818181;
-    font-size: 4rem;
-    text-shadow: 2px 2px 5px #3682B3;
-    position: relative;
+.nav-games{
     margin: auto 10px auto auto;
+    height: 35px;
+    width: 45px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.menu-bar{
+    width: 100%;
+    height: 5px;
+    margin: 1px;
+    background-color: #818181;
+    box-shadow: 0px 0px 21px 0px rgba(98,150,174,0.89);
+    transition: 0.5s;
+}
+
+.deactivate_mid{
+    opacity: 0;
+}
+
+.spin_first{
+    transform: rotate(45deg)translate(0, 17px);
+    margin: 0;
+}
+
+.spin_third{
+    transform: rotate(-45deg)translate(0, -17px);
+    margin: 0;
+}
 .side-menu{
     border: white solid 2px;
     background-color: #3682B3;
@@ -107,23 +159,20 @@ main{
     width: 200px;
     position: absolute;
     z-index: 1;
-    top: 90px;
+    top: 65px;
     transition: 1s;
     right: -220px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .a_side-menu{
-    right: 0;
+    right: 5px;
 }
 
 .myGame_text{
     color: white;
     font-size: 1.5rem;
     margin: 2px 0 2px 5px;
-}
-.a_myGame-text{
-    color: blue;
 }
 
                                                 /* Header stuff */ 
@@ -133,6 +182,8 @@ header{
     background-color: #3682B3;
     height: 60px;
     box-shadow: 0px 6px 9px 0px rgba(150, 215, 255,1);
+    position: relative;
+    z-index: 10;
 }
 
 .border-filler{
@@ -158,7 +209,8 @@ header{
     border: 2px solid white;
     border-top: none;
     top: -230px;
-    z-index: -1;
+
+    z-index: 5;
 
     display: grid;
     grid-template-rows: 2px;
@@ -190,7 +242,26 @@ header{
 
                                                  /* Icons and fonts */
 
+.text-product{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.first-page-img-text{
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 
+    2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 
+    3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 
+    5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 
+    6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 
+    7px 8px 0px #378ab4, 8px 7px 0px #5dabcd, 
+    2px 2px 2px rgba(181,49,206,0);
 
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    line-height: 125px;
+    
+}
 i.material-icons{
     color: white;
     font-size: 3rem;
@@ -205,6 +276,12 @@ a{
     color: white;
 }
 
+.launch_text{
+    color: white;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
 #header_icons{
     float: right;
     vertical-align: middle;
@@ -213,7 +290,6 @@ a{
     display: flex;
     justify-content: center;
     transition: 0.5s;
-    z-index: 100;
     border-left: white 2px solid;
 
 }
