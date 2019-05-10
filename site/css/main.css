@@ -3,12 +3,14 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    position: relative;
 }
 
 .wrapper{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -80,17 +82,22 @@ main{
     background-image: url(../img/candycrush@150px-X-175px.png)
 }
 
+.myGames:nth-child(3){
+    background-image: url(../img/PvsZ@150px-X-175px.jpg)
+}
+
 .myGames{
     height: 175px;
     width: 150px;
     background-color: #3682B3;
     margin: 10px auto 10px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 .game-ad{
     width: 90%;
     height: 150px;
     background-color: #3682B3;
-    margin: 0 auto 10px auto;
+    margin: 0 5% 10px 5%;
     box-shadow: 0px 0px 10px 0px rgba(117,245,255,1);
 }
 
@@ -159,7 +166,7 @@ main{
     width: 200px;
     position: absolute;
     z-index: 1;
-    top: 65px;
+    top: 125px;
     transition: 1s;
     right: -220px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -178,12 +185,16 @@ main{
                                                 /* Header stuff */ 
 
 
+.behinder{
+    z-index: -1;
+
+}
 header{
     background-color: #3682B3;
     height: 60px;
     box-shadow: 0px 6px 9px 0px rgba(150, 215, 255,1);
     position: relative;
-    z-index: 10;
+    z-index: 100000;
 }
 
 .border-filler{
@@ -210,19 +221,19 @@ header{
     border-top: none;
     top: -230px;
 
-    z-index: 5;
-
     display: grid;
     grid-template-rows: 2px;
     grid-template-columns: 10px 1fr 10px;
 
     transition: 0.5s;
+
     transition-delay: 0.3s;
 }
 
 .a_dropdown_profile{
     top: 60px;
 }
+
 
 .menu-items{
     height: 100%;
@@ -280,6 +291,12 @@ a{
     color: white;
     text-align: center;
     margin: 0 auto 0 auto;
+}
+
+.arrow{
+    position: absolute;
+    left: 0;
+    border-left: none !important;
 }
 
 #header_icons{

@@ -36,3 +36,7 @@ function launch(){
         launch_text.innerHTMl = "Launch"
     }
 }
+
+function goBack(){
+    window.history.back();
+}
