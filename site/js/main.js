@@ -4,6 +4,9 @@ function dropdown_profile(){
 
     profilebox = document.querySelector(".profilebox")
     profilebox.classList.toggle("a_profilebox")
+
+    box2 = document.querySelector(".box2")
+    box2.classList.toggle("a_profilebox")
 }
 
 function dropdown_more(){
