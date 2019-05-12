@@ -6,6 +6,10 @@ body{
     position: relative;
 }
 
+.mobileOff{
+    display: none;
+}
+
 .wrapper{
     height: 100%;
     width: 100%;
@@ -21,6 +25,20 @@ body{
     margin: 10px 0 0 0;
 }
 
+.main2store{
+    height: calc(100vh - 320px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scrollables{
+    flex: 0 0 auto;
+}
+.storeMain{
+    display: flex;
+    flex-wrap: wrap;
+}
 .launch{
     display: flex;
     align-items: center;
@@ -181,6 +199,41 @@ main{
     color: white;
     font-size: 1.5rem;
     margin: 2px 0 2px 5px;
+}
+
+.storeTitel{
+    width: 38%;
+    color: white;
+    border-right: 2px #818181 solid;
+    font-size: 1.7rem;
+    margin-left: 1%;
+    text-shadow: rgb(129, 129, 129) 2px 0px 0px, rgb(129, 129, 129) 1.75517px 0.958851px 0px, rgb(129, 129, 129) 1.0806px 1.68294px 0px, rgb(129, 129, 129) 0.141474px 1.99499px 0px, rgb(129, 129, 129) -0.832294px 1.81859px 0px, 
+    rgb(129, 129, 129) -1.60229px 1.19694px 0px, rgb(129, 129, 129) -1.97998px 0.28224px 0px, 
+    rgb(129, 129, 129) -1.87291px -0.701566px 0px, rgb(129, 129, 129) -1.30729px -1.5136px 0px, rgb(129, 129, 129) -0.421592px -1.95506px 0px, rgb(129, 129, 129) 0.567324px -1.91785px 0px, 
+    rgb(129, 129, 129) 1.41734px -1.41108px 0px, rgb(129, 129, 129) 1.92034px -0.558831px 0px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.correctWidthBG{
+    width: 60%;
+    height: auto;
+}
+
+.box-games{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.game{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    margin-top: 20px;
 }
 
                                                 /* Header stuff */ 
@@ -359,4 +412,120 @@ a{
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
+}
+
+.gameTitel{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: rgb(54, 130, 179) 2px 0px 0px, 
+    rgb(54, 130, 179) 1.75517px 0.958851px 0px, 
+    rgb(54, 130, 179) 1.0806px 1.68294px 0px, 
+    rgb(54, 130, 179) 0.141474px 1.99499px 0px, 
+    rgb(54, 130, 179) -0.832294px 1.81859px 0px, 
+    rgb(54, 130, 179) -1.60229px 1.19694px 0px, 
+    rgb(54, 130, 179) -1.97998px 0.28224px 0px, 
+    rgb(54, 130, 179) -1.87291px -0.701566px 0px, 
+    rgb(54, 130, 179) -1.30729px -1.5136px 0px, 
+    rgb(54, 130, 179) -0.421592px -1.95506px 0px, 
+    rgb(54, 130, 179) 0.567324px -1.91785px 0px, 
+    rgb(54, 130, 179) 1.41734px -1.41108px 0px, 
+    rgb(54, 130, 179) 1.92034px -0.558831px 0px;
+}
+
+.main2storeText{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 800px){
+    .desktopOff{
+        display: none !important;
+    }
+
+    .mobileOff{
+        display: block;
+    }
+
+    .homepage{
+        display: grid;
+        grid-template-columns: 200px auto; 
+        grid-template-rows: 150px auto; 
+    }
+
+    header{
+        height: 100%;
+        width: 100%;
+        grid-row: span 2;
+        grid-column: span 1;
+        position: relative !important;
+    }
+
+    .first-page-img{
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: #5dabcd;
+        background-image: none;
+        height: 100% !important;
+        width: calc(95% + 4px) !important;
+        margin: 0 auto 0 auto;
+        border: none;
+    }
+
+    .first-page-img-text{
+        text-align: initial;
+        margin: 0 0 20px 10px;
+    }
+
+    .Pc-titel{
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .nav-grid{
+        display: grid;
+        grid-template-columns: 10px auto;
+        grid-template-rows: 60px 60px 60px;
+    }
+
+    .nav-text{
+        font-size: 1.6rem;
+        vertical-align: center;
+        line-height: 60px;
+    }
+
+    .game-ad-parent{
+        display: grid;
+        grid-template-columns: 175px 175px 175px;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        width: 545px;
+    }
+
+    .game-ad{
+        height: 100%;
+        width: 100%;
+        margin: 0 0 0 0!important;
+    }
+
+    .title-first-page{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .active-text{
+        background-color: rgba(255, 255, 255, 0);
+        transition: 0.4s;
+    }
+    
+    .active-text:hover{
+        background-color: rgba(255, 255, 255, 0.4)
+    }
+    
+    .nav-text{
+        color: white;
+        background-color: transparent;
+    }
+
 }
