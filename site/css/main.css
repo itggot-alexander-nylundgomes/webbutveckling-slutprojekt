@@ -454,7 +454,7 @@ a{
     }
 
     header{
-        height: 100%;
+        height: 100vh;
         width: 100%;
         grid-row: span 2;
         grid-column: span 1;
@@ -526,6 +526,25 @@ a{
     .nav-text{
         color: white;
         background-color: transparent;
+    }
+
+    .myGames{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+    }
+
+    #lib-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px;
+        grid-gap: 10px;
+    }
+
+    .ontop-main{
+        margin: auto 0 auto 0;
+        font-size: 1.5rem;
     }
 
 }
