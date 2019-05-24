@@ -26,7 +26,7 @@ body{
 }
 
 .main2store{
-    height: calc(100vh - 320px);
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,6 +477,20 @@ a{
         margin: 0 0 20px 10px;
     }
 
+    .storepage{
+        display: grid;
+        grid-template-rows: 300px auto;
+        grid-template-columns: 150px auto;
+    }
+
+    .box-games{
+        margin-top: 18px;
+    }
+
+    .storeTitel{
+        border: none;
+    }
+
     .Pc-titel{
         color: white;
         text-align: center;
@@ -507,6 +521,18 @@ a{
         height: 100%;
         width: 100%;
         margin: 0 0 0 0!important;
+    }
+
+    .game{
+        height: auto;
+        width: auto;
+        margin-left: 10px !important;
+    }
+
+    .itemgrid{
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 200px 50px calc(100% - 250px);
     }
 
     .title-first-page{
