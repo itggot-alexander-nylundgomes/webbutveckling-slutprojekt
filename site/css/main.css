@@ -32,6 +32,20 @@ body{
     border: white 2px solid;
 }
 
+.box-of-review-stars{
+    display: flex;
+    flex-wrap: wrap;
+    height: 48px;
+}
+.review-part{
+    background-color: #3682B3;
+    height: auto;
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-rows: 48px 40px 1fr 1fr 1fr;
+    width: 100vw;
+}
+
 #fallout76{
    background-image: url(../img/Fallout76/fallout76@320px-X-150px.jpg); 
 }
@@ -68,13 +82,13 @@ body{
 }
 
 .list-of-games{
-    height: 225px;
-    background-image: url(../img/background-for-listOfGames@375px-X-225px.jpg);
+    height: 250px;
+    background-image: url(../img/background-for-listOfGames@800px-X-250px.jpg);
     margin: 0 auto 10px 0;
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 50px 1fr 25px;
     background-repeat: no-repeat;
-    width: 375px;
+    width: 100vw;
     box-shadow: 0px 0px 10px 0px rgba(255,76,159,1);
 }
 
@@ -90,12 +104,20 @@ body{
     background-image: url(../img/Fallout76/fallout76_img3@170px-X-114px.jpg)
 }
 
-#fallout76_first_image{
+#fallout76_1_image{
     background-image: url(../img/Fallout76/fallout76@375px-X-200px.jpg);
 }
 
-#fallout76_second_image{
-    background-image: url(../img/CandyCrush/candycrush@375px-X-200px.jpg)
+#fallout76_2_image{
+    background-image: url(../img/Fallout76/fallout76_2@375px-X-200px.jpg)
+}
+
+#fallout76_3_image{
+    background-image: url(../img/Fallout76/fallout76_3@375px-X-200px.jpg)
+}
+
+#fallout76_4_image{
+    background-image: url(../img/Fallout76/fallout76_4@375px-X-200px.jpg)
 }
 
 footer{
@@ -116,6 +138,28 @@ footer{
 
 #scrollables{
     flex: 0 0 auto;
+    width: 150px;
+    margin: 0 10px 0 10px;
+}
+
+#scrollables:nth-child(1){
+    background-image: url(../img/Fallout76/fallout76@150px-X-175px.jpg);
+}
+
+#scrollables:nth-child(2){
+    background-image: url(../img/CandyCrush/candycrush@150px-X-175px.jpg);
+}
+
+#scrollables:nth-child(3){
+    background-image: url(../img/PlantsVsZombies/PvsZ@150px-X-175px.jpg);
+}
+
+#scrollables:nth-child(4){
+    background-image: url(../img/ModernWarfare2/modernwarfare2@150px-X-175px.jpg);
+}
+
+#scrollables:nth-child(5){
+    background-image: url(../img/EuropaUniversalis4/europauniversalis4@150px-X-175px.jpg);
 }
 
 .storeMain{
@@ -129,10 +173,10 @@ footer{
     width: 150px;
     height: 75px;
     background-color: #3682B3;
-    margin: 10px auto 10px auto;
+    margin: 10px 0 10px 0;
     border-radius: 10px;
     border: solid white 3px;
-    box-shadow: 0px 0px 21px 0px rgba(255,76,159,1);
+    box-shadow: 0px 0px 10px 0px rgba(255,76,159,0.6);
 }
 
 .myGame-main{
@@ -140,9 +184,10 @@ footer{
     grid-template-columns: 170px 170px;
     grid-template-rows: 120px 120px 120px;
     grid-row-gap: 10px;
-    width: 340px;
+    min-width: 320px;
+    max-width: 340px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.4);
     margin: 0;
 }
 
@@ -163,7 +208,7 @@ footer{
     box-shadow: 0px 0px 21px 0px rgba(98,150,174,0.89);
 }
 
-.centering-img{
+.centering{
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -332,17 +377,26 @@ main{
 }
 
 .box-games{
-    height: 250px;
-    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+}
+
+#recommended-product-wrapper{
+    height: 100%;
 }
 
 .game{
     display: grid;
     grid-template-rows: 80% 20%;
     margin-top: 20px;
+}
+
+.description-of-game{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
                                                 /* Header stuff */ 
@@ -423,6 +477,45 @@ header{
 .text-product{
     font-size: 1.2rem;
     text-align: center;
+    color: white;
+}
+
+#title-for-reviews{
+    margin: 20px 0 0 5%;
+}
+
+.review{
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.review-title{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+#inactive{
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.star{
+    width: 48px;
+    height: 48px;
+}
+
+#title-description{
+    margin: 0 0 0 5%;
+}
+
+.description-of-game-text{
+    margin: 10px 0 20px 0;
+    background-color: #3682B3;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 90vw;
 }
 
 #image_button{

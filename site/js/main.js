@@ -47,10 +47,16 @@ function goBack(){
 function changeImg(){
     img = document.querySelector(".first-img-product")
     
-    if (img.id === 'fallout76_first_image'){
-        img.id = 'fallout76_second_image'
+    if (img.id === 'fallout76_1_image'){
+        img.id = 'fallout76_2_image'
     }
-    else {
-        img.id = 'fallout76_first_image'
+    else if(img.id === 'fallout76_2_image'){
+        img.id = 'fallout76_3_image'
+    }
+    else if (img.id === 'fallout76_3_image'){
+        img.id = 'fallout76_4_image'
+    }
+    else if (img.id === 'fallout76_4_image'){
+        img.id = 'fallout76_1_image'
     }
 }
