@@ -26,9 +26,30 @@ body{
 
 .first-img-product{
     height: 200px;
-    margin: 10px auto 0 auto;
     background-repeat: no-repeat;
     width: 375px;
+    box-shadow: 0px 0px 20px 0px rgba(255,255,255,1);
+    border: white 2px solid;
+}
+
+#fallout76{
+   background-image: url(../img/Fallout76/fallout76@320px-X-150px.jpg); 
+}
+
+#candycrush{
+    background-image: url(../img/CandyCrush/candycrush@320px-X-150px.jpg);
+}
+
+#plantsvszombies{
+    background-image: url(../img/PlantsVsZombies/pvsz@320px-X-150px.jpg);
+}
+
+#modernwarfare2{
+    background-image: url(../img/ModernWarfare2/modernwarfare2@320px-X-150px.jpg)
+}
+
+#europauniversalis4{
+    background-image: url(../img/EuropaUniversalis4/europauniversalis4@320px-X-150px.jpg);
 }
 
 .img_button{
@@ -49,17 +70,32 @@ body{
 .list-of-games{
     height: 225px;
     background-image: url(../img/background-for-listOfGames@375px-X-225px.jpg);
-    margin: 0 0 10px 0;
+    margin: 0 auto 10px 0;
     display: grid;
     grid-template-rows: 50px 1fr;
+    background-repeat: no-repeat;
+    width: 375px;
+    box-shadow: 0px 0px 10px 0px rgba(255,76,159,1);
+}
+
+#fallout76-img:nth-of-type(1){
+    background-image: url(../img/Fallout76/fallout76_img1@170px-X-114px.jpg)
+}
+
+#fallout76-img:nth-of-type(2){
+    background-image: url(../img/Fallout76/fallout76_img2@170px-X-114px.jpg)
+}
+
+#fallout76-img:nth-of-type(3){
+    background-image: url(../img/Fallout76/fallout76_img3@170px-X-114px.jpg)
 }
 
 #fallout76_first_image{
-    background-image: url(../img/fallout76@375px-X-200px.jpg);
+    background-image: url(../img/Fallout76/fallout76@375px-X-200px.jpg);
 }
 
 #fallout76_second_image{
-    background-image: url(../img/candycrush@375px-X-200px.jpg)
+    background-image: url(../img/CandyCrush/candycrush@375px-X-200px.jpg)
 }
 
 footer{
@@ -101,14 +137,23 @@ footer{
 
 .myGame-main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 170px 170px;
     grid-template-rows: 120px 120px 120px;
     grid-row-gap: 10px;
-    width: 100vw;
+    width: 340px;
     border: none;
-    border-top: solid 2px grey;
-    border-bottom: solid 2px grey;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
 
+.wrapper-for-gameMain{
+    display: grid;
+    justify-content: center;
+    background-image: url(../img/banner-for-games@800px-X-380px.jpg);
+    width: 100vw;
+    margin: 0;
+    border: white 2px solid;
+    box-shadow: 0px 0px 20px 0px rgba(255,76,159,1);
 }
 
 .img-product{
@@ -118,10 +163,26 @@ footer{
     box-shadow: 0px 0px 21px 0px rgba(98,150,174,0.89);
 }
 
+.centering-img{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#fallout76-image{
+    margin-top: 10px;
+    background-image: url(../img/Fallout76/banner-fallout76@800px-X-375px.jpg)
+}
+
+#homepage-image{
+    background-image: url(../img/banner@800px-X-375px.jpg);
+    margin-top: 23px;
+    border: white 2px solid;
+}
+
 .first-page-img{
     height: 200px;
-    width: 100%;
-    margin-top: 25px;
+    width: 375px;
     background-image: url(../../misc/Namnlöst-1.jpg);
     box-shadow: 0px 0px 33px 12px rgba(98,150,174,0.89);
     border-top: white solid 4px;
@@ -129,9 +190,9 @@ footer{
 }
 
 main{
-    width: 95%;
+    width: 95vw;
     height: auto;
-    margin: 10px auto 10px auto;
+    margin: 10px 2.5vw 10px 2.5vw;
     background-color: #EEEEEE;
     border: solid 2px grey;
 }
@@ -142,15 +203,15 @@ main{
 }
 
 .myGames:nth-child(1){
-    background-image: url(../img/fallout76@150px-X-175px.jpg)
+    background-image: url(../img/Fallout76/fallout76@150px-X-175px.jpg)
 }
 
 .myGames:nth-child(2){
-    background-image: url(../img/candycrush@150px-X-175px.png)
+    background-image: url(../img/CandyCrush/candycrush@150px-X-175px.png)
 }
 
 .myGames:nth-child(3){
-    background-image: url(../img/PvsZ@150px-X-175px.jpg)
+    background-image: url(../img/PlantsVsZombies/PvsZ@150px-X-175px.jpg)
 }
 
 .myGames{
@@ -161,11 +222,11 @@ main{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 .game-ad{
-    width: 90%;
+    width: 320px;
     height: 150px;
-    background-color: #3682B3;
-    margin: 0 5% 10px 5%;
+    margin: 0 auto 10px auto;
     box-shadow: 0px 0px 10px 0px rgba(117,245,255,1);
+    background-repeat: no-repeat;
 }
 
 .more-pls{
