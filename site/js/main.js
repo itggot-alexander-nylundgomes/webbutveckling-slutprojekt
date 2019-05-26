@@ -43,3 +43,14 @@ function launch(){
 function goBack(){
     window.history.back();
 }
+
+function changeImg(){
+    img = document.querySelector(".first-img-product")
+    
+    if (img.id === 'fallout76_first_image'){
+        img.id = 'fallout76_second_image'
+    }
+    else {
+        img.id = 'fallout76_first_image'
+    }
+}

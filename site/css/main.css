@@ -11,10 +11,14 @@ body{
 }
 
 .wrapper{
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
@@ -22,7 +26,49 @@ body{
 
 .first-img-product{
     height: 200px;
-    margin: 10px 0 0 0;
+    margin: 10px auto 0 auto;
+    background-repeat: no-repeat;
+    width: 375px;
+}
+
+.img_button{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: solid white 2px;
+    background-color: #3682B3;
+    position: relative;
+    right: -20px;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,1);
+}
+
+.list-of-games{
+    height: 225px;
+    background-image: url(../img/background-for-listOfGames@375px-X-225px.jpg);
+    margin: 0 0 10px 0;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+#fallout76_first_image{
+    background-image: url(../img/fallout76@375px-X-200px.jpg);
+}
+
+#fallout76_second_image{
+    background-image: url(../img/candycrush@375px-X-200px.jpg)
+}
+
+footer{
+    width: 100vw;
+    height: 50px;
+    background-color: #3682B3;
+    margin-top: auto;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 10px 0px rgba(150, 215, 255,1);
 }
 
 .main2store{
@@ -35,10 +81,12 @@ body{
 #scrollables{
     flex: 0 0 auto;
 }
+
 .storeMain{
     display: flex;
     flex-wrap: wrap;
 }
+
 .launch{
     display: flex;
     align-items: center;
@@ -83,7 +131,7 @@ body{
 main{
     width: 95%;
     height: auto;
-    margin: 10px auto 0 auto;
+    margin: 10px auto 10px auto;
     background-color: #EEEEEE;
     border: solid 2px grey;
 }
@@ -314,6 +362,23 @@ header{
 .text-product{
     font-size: 1.2rem;
     text-align: center;
+}
+
+#image_button{
+    font-size: 1.5rem;
+}
+
+.text-for-list{
+    color: white;
+    margin: auto 0 auto 10px;
+    font-size: 1.5rem;
+}
+
+.contact-info{
+    padding: 2px;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 0 0 10px;
 }
 .first-page-img-text{
     text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 
