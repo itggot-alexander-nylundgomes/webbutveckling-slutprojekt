@@ -60,3 +60,37 @@ function changeImg(){
         img.id = 'fallout76_1_image'
     }
 }
+
+function changeImgCandyCrush(){
+    img = document.querySelector(".first-img-product")
+    
+    if (img.id === 'candycrush_1_image'){
+        img.id = 'candycrush_2_image'
+    }
+    else if(img.id === 'candycrush_2_image'){
+        img.id = 'candycrush_3_image'
+    }
+    else if (img.id === 'candycrush_3_image'){
+        img.id = 'candycrush_4_image'
+    }
+    else if (img.id === 'candycrush_4_image'){
+        img.id = 'candycrush_1_image'
+    }
+}
+
+function changeImgPlantsVsZombies(){
+    img = document.querySelector(".first-img-product")
+    
+    if (img.id === 'plantsvszombies_1_image'){
+        img.id = 'plantsvszombies_2_image'
+    }
+    else if(img.id === 'plantsvszombies_2_image'){
+        img.id = 'plantsvszombies_3_image'
+    }
+    else if (img.id === 'plantsvszombies_3_image'){
+        img.id = 'plantsvszombies_4_image'
+    }
+    else if (img.id === 'plantsvszombies_4_image'){
+        img.id = 'plantsvszombies_1_image'
+    }
+}

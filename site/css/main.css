@@ -92,6 +92,8 @@ body{
     box-shadow: 0px 0px 10px 0px rgba(255,76,159,1);
 }
 
+                                                                                    /* Fallout 76 Image Stuff */
+
 #fallout76-img:nth-of-type(1){
     background-image: url(../img/Fallout76/fallout76_img1@170px-X-114px.jpg)
 }
@@ -118,6 +120,66 @@ body{
 
 #fallout76_4_image{
     background-image: url(../img/Fallout76/fallout76_4@375px-X-200px.jpg)
+}
+
+                                                                                    /* Candy Crush Image Stuff */
+
+#candycrush-img:nth-of-type(1){
+    background-image: url(../img/CandyCrush/candycrush_img1@170px-X-114px.jpg)
+}
+
+#candycrush-img:nth-of-type(2){
+    background-image: url(../img/CandyCrush/candycrush_img2@170px-X-114px.jpg)
+}
+
+#candycrush-img:nth-of-type(3){
+    background-image: url(../img/CandyCrush/candycrush_img3@170px-X-114px.jpg)
+}
+
+#candycrush_1_image{
+    background-image: url(../img/CandyCrush/candycrush@375px-X-200px.jpg);
+}
+
+#candycrush_2_image{
+    background-image: url(../img/CandyCrush/candycrush_2@375px-X-200px.jpg)
+}
+
+#candycrush_3_image{
+    background-image: url(../img/CandyCrush/candycrush_3@375px-X-200px.jpg)
+}
+
+#candycrush_4_image{
+    background-image: url(../img/CandyCrush/candycrush_4@375px-X-200px.jpg)
+}
+
+                                                                                    /* Plants vs Zombies Image Stuff */
+
+#plantsvszombies-img:nth-of-type(1){
+    background-image: url(../img/PlantsVsZombies/pvsz_img1@170px-X-114px.jpg)
+}
+
+#plantsvszombies-img:nth-of-type(2){
+    background-image: url(../img/PlantsVsZombies/pvsz_img2@170px-X-114px.jpg)
+}
+
+#plantsvszombies-img:nth-of-type(3){
+    background-image: url(../img/PlantsVsZombies/pvsz_img3@170px-X-114px.jpg)
+}
+
+#plantsvszombies_1_image{
+    background-image: url(../img/PlantsVsZombies/pvsz@375px-X-200px.jpg);
+}
+
+#plantsvszombies_2_image{
+    background-image: url(../img/PlantsVsZombies/plantsvszombies_2@375px-X-200px.jpg)
+}
+
+#plantsvszombies_3_image{
+    background-image: url(../img/PlantsVsZombies/plantsvszombies_3@375px-X-200px.jpg)
+}
+
+#plantsvszombies_4_image{
+    background-image: url(../img/PlantsVsZombies/plantsvszombies_4@375px-X-200px.jpg)
 }
 
 footer{
@@ -217,6 +279,16 @@ footer{
 #fallout76-image{
     margin-top: 10px;
     background-image: url(../img/Fallout76/banner-fallout76@800px-X-375px.jpg)
+}
+
+#candycrush-image{
+    margin-top: 10px;
+    background-image: url(../img/CandyCrush/banner-candycrush@800px-X-375px.jpg)
+}
+
+#plantsvszombies-image{
+    margin-top: 10px;
+    background-image: url(../img/PlantsVsZombies/banner-plantsvszombies@800px-X-375px.jpg)
 }
 
 #homepage-image{
