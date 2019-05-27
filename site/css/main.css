@@ -1231,10 +1231,7 @@ a{
         text-align: left;
     }
 
-    .img-with-left-text{
-        display: grid !important;
-        grid-template-columns: 300px auto;
-    }
+
 
     .static-nav-bar{
         width: 100%;
@@ -1259,7 +1256,10 @@ a{
     }
 
     #fallout76-layout-img:nth-of-type(3){
-        background-image: url(../img/Fallout76/fallout76_img2@1720px-X-500px.jpg)
+        background-image: url(../img/Fallout76/fallout76_img2@1720px-X-500px.jpg);
+        display: grid;
+        grid-template-columns: 300px auto;
+        grid-template-rows: 500px;
     }
 
     .review-part{
