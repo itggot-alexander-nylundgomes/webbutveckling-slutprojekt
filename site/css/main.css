@@ -32,11 +32,57 @@ body{
     border: white 2px solid;
 }
 
+.ad-image{
+    background-image: url(../img/Fallout76/fallout76@150px-X-175px.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.store-image{
+    width: 100vw;
+    background-color: #3682B3;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.store-nav{
+    width: 80vw;
+    background-color: #818181;
+    height: 35px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+}
+
+.store-button{
+    background-color: #5dabcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .box-of-review-stars{
     display: flex;
     flex-wrap: wrap;
     height: 48px;
 }
+
+.store-main{
+    display: grid;
+    grid-template-rows: 175px 200px;
+}
+
+.adgroup{
+    height: 100%;
+    width: 100%;
+    background-color: #3682B3;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+
+
 .review-part{
     background-color: #3682B3;
     height: auto;
@@ -191,13 +237,6 @@ footer{
     box-shadow: 0px 0px 10px 0px rgba(150, 215, 255,1);
 }
 
-.main2store{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #scrollables{
     flex: 0 0 auto;
     width: 150px;
@@ -224,10 +263,6 @@ footer{
     background-image: url(../img/EuropaUniversalis4/europauniversalis4@150px-X-175px.jpg);
 }
 
-.storeMain{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .launch{
     display: flex;
@@ -427,18 +462,6 @@ main{
     margin: 2px 0 2px 5px;
 }
 
-.storeTitel{
-    width: 38%;
-    color: white;
-    border-right: 2px #818181 solid;
-    font-size: 1.7rem;
-    margin-left: 1%;
-    text-shadow: rgb(129, 129, 129) 2px 0px 0px, rgb(129, 129, 129) 1.75517px 0.958851px 0px, rgb(129, 129, 129) 1.0806px 1.68294px 0px, rgb(129, 129, 129) 0.141474px 1.99499px 0px, rgb(129, 129, 129) -0.832294px 1.81859px 0px, 
-    rgb(129, 129, 129) -1.60229px 1.19694px 0px, rgb(129, 129, 129) -1.97998px 0.28224px 0px, 
-    rgb(129, 129, 129) -1.87291px -0.701566px 0px, rgb(129, 129, 129) -1.30729px -1.5136px 0px, rgb(129, 129, 129) -0.421592px -1.95506px 0px, rgb(129, 129, 129) 0.567324px -1.91785px 0px, 
-    rgb(129, 129, 129) 1.41734px -1.41108px 0px, rgb(129, 129, 129) 1.92034px -0.558831px 0px;
-}
-
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -550,6 +573,15 @@ header{
     font-size: 1.2rem;
     text-align: center;
     color: white;
+}
+
+.store-title{
+    margin: 10px 0 10px 5%;
+    font-size: 2.4rem;
+}
+
+.store-button-font{
+    font-size: 2.2rem !important;
 }
 
 #title-for-reviews{
@@ -724,10 +756,6 @@ a{
     rgb(54, 130, 179) 1.92034px -0.558831px 0px;
 }
 
-.main2storeText{
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
 
 @media only screen and (min-device-width: 800px){
     .desktopOff{
@@ -768,18 +796,8 @@ a{
         margin: 0 0 20px 10px;
     }
 
-    .storepage{
-        display: grid;
-        grid-template-rows: 300px auto;
-        grid-template-columns: 150px auto;
-    }
-
     .box-games{
         margin-top: 18px;
-    }
-
-    .storeTitel{
-        border: none;
     }
 
     .Pc-titel{
