@@ -18,8 +18,8 @@
                 <div class="border-filler"></div>
                 <div class="border-filler" id="right"></div>            
                 <div class="menu-items">
-                    <div class="nav-button"></div>
-                    <a href="index.html"><h2 class="nav-text active-text">Hem</h2></a> 
+                    <div class="nav-button non-active-link"></div>
+                    <a href="index.html"><h2 class="nav-text">Hem</h2></a> 
                     <div class="nav-button non-active-link"></div>
                     <h2 class="nav-text"> <a href="bibliotek.html">Bibliotek</a> </h2> 
                     <div class="nav-button non-active-link"></div>
@@ -29,7 +29,7 @@
             </i>
         </header>
          
-        <header class="upper">
+        <header class="upper" id="for-articles">
                          <!-- Mobile stuff -->
 
             <a href="index.html" class="desktopOff"><i class="material-icons" id="header_icons">home</i></a> 
@@ -39,8 +39,8 @@
                 <h1 class="Pc-titel">Esketit</h1>
                                 
                 <div class="nav-grid">
-                    <div class="nav-button"></div>
-                    <a href="index.html"><h2 class="nav-text active-text">Hem</h2></a> 
+                    <div class="nav-button non-active-link"></div>
+                    <a href="index.html"><h2 class="nav-text">Hem</h2></a> 
                     <div class="nav-button non-active-link"></div>
                     <h2 class="nav-text"> <a href="bibliotek.html">Bibliotek</a> </h2> 
                     <div class="nav-button non-active-link"></div>
@@ -50,7 +50,7 @@
             </div>
         </header>
 
-        <div class="centering" id="fallout76-image">
+        <div class="centering desktopOff" id="fallout76-image">
             <picture class="first-img-product" id="fallout76_1_image"> 
                 <div class="img_button" onclick="changeImg()">
                 <i class="material-icons" id="image_button">image</i>
@@ -58,14 +58,17 @@
             </picture>
         </div>
 
-        <div class="centering">
+        <div class="centering desktopOff">
             <div class="launch">
                 <h1 class="launch_text" onclick="launch()">Launch</h1>
             </div>
         </div>
 
-        <h1 id="title-description">What's it all about?</h1>
-        <section class="description-of-game">
+        <div class="desktopOff">
+            <h1 id="title-description">What's it all about?</h1>
+        </div>
+
+        <section class="description-of-game desktopOff">
             <p class="description-of-game-text">
                     Fallout 76 is a prequel to the entire franchise. 
                     The character you create is one of the first to be sealed in Vault 76 and emerge into daylight in 2102, 
@@ -75,7 +78,7 @@
             </p>
         </section>
 
-        <main class="wrapper-for-gameMain">
+        <main class="wrapper-for-gameMain desktopOff">
             <main class="myGame-main">
                 <picture class="img-product" id="fallout76-img"> </picture>
                 <h1 class="text-product"> Great game. Amazing how they made it without a single bug!</h1>
@@ -86,9 +89,11 @@
             </main>
         </main>
 
-        <h1 id="title-for-reviews">Reviews</h1>
+        <div class="desktopOff">
+            <h1 id="title-for-reviews">Reviews</h1>
+        </div>
 
-        <article class="review-part">
+        <article class="review-part desktopOff">
             <div class="review-stars centering">
                 <div class="box-of-review-stars">
                     <i class="material-icons star">star_rate</i>
@@ -115,10 +120,8 @@
                 </h2>
         </article>
 
-        <section class="list-of-games">
+        <section class="list-of-games desktopOff">
             <h3 class="text-for-list">You might also like...</h3>
-
-        <div class="centering">
             <nav class="box-games" id="recommended-product-wrapper">
                 <a href="fallout76.html" id="scrollables"></a>
                 <a href="candycrush.html" id="scrollables"></a>
@@ -126,11 +129,72 @@
                 <a href="" id="scrollables"></a>
                 <a href="" id="scrollables"></a>
             </nav>
-        </div>
-
         </section>
 
-        <footer>
+        <!-- Beginning of desktop layout -->
+
+        <main class="desktop-main mobileOff">
+            <picture class="desktop-first-image-article" id="fallout76-main-img">
+                <section class="readable-text-box">
+                    <h1 class="main-title">Fallout 76</h1>
+                        <p class="description-of-game-text">
+                            Fallout 76 is a prequel to the entire franchise. 
+                            The character you create is one of the first to be sealed in Vault 76 and emerge into daylight in 2102, 
+                            roughly twenty years after nuclear warheads blasted the world in what is known in the game’s lore as the Great War. 
+                            Vault 76 is a test vault by design and its inhabitants are scheduled to be studied when they re-enter the world.
+                            Meanwhile, many of the other vaults stay safely shut.
+                        </p>
+
+                        <div class="launch">
+                            <h1 class="launch_text" onclick="launch()">Launch</h1>
+                        </div>
+                </section>
+            </picture>
+            <nav class="static-nav-bar"></nav>
+            
+            <picture id="fallout76-layout-img">
+                <article class="review-part">
+                    <div class="review-stars centering">
+                        <div class="box-of-review-stars">
+                            <i class="material-icons star">star_rate</i>
+                            <i class="material-icons star">star_rate</i>
+                            <i class="material-icons star">star_rate</i>
+                            <i class="material-icons star" id="inactive">star_rate</i>
+                            <i class="material-icons star" id="inactive">star_rate</i>
+                        </div>
+                    </div>
+                    <h2 class="review-title">General review
+                    </h2>
+                    <section class="review-holder">
+                        <h2 class="review">
+                            "In an effort to do everything, Fallout 76 fails to 
+                            do any of it well enough to form an identity."- <i>IGN '5/10'</i>
+                        </h2>
+
+                        <h2 class="review">
+                            "As quests and exploration move you back and 
+                            forth across the map, 
+                            though, repetition begins to set in"- <i>PC Gamer '60/100'</i>
+                        </h2>
+                    
+                        <h2 class="review">
+                            "Brings friends and some patience to enjoy Fallout 76’s massive wasteland."- <i>Digital Trends '6/10'</i>
+                        </h2>
+                    </section>
+                </article>
+            </picture>
+
+            <picture class="img-with-left-text" id="fallout76-layout-img">
+                <section class="readable-text-box">
+                    <h1 class="product-text">
+                        Team up with you friends in order to improve your chances of survival in the nuclear world. 
+                        Gather loot, build bases and fight off any intruders or monsters!
+                    </h1>
+                </section>
+            </picture>
+            <picture id="fallout76-layout-img"></picture>
+        </main>
+        <footer class="article-footer">
             <h3 class="contact-info">
                 Contact:
                 <br>

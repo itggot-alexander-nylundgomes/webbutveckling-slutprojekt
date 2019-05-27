@@ -25,7 +25,6 @@ body{
     justify-content: center;
 }
 
-
                                              /* Main stuff */
 
 .first-img-product{
@@ -37,11 +36,22 @@ body{
 }
 
 .ad-image{
-    background-image: url(../img/Fallout76/fallout76@150px-X-175px.jpg);
     background-repeat: no-repeat;
     height: 175px;
     align-self: center;
     box-shadow: 0px 0px 12px 0px rgba(255,255,255,1);
+}
+
+#fallout76-store-frontG{
+    background-image: url(../img/Fallout76/fallout76@150px-X-175px.jpg);
+}
+
+#modernwarfare2-store-frontG{
+    background-image: url(../img/ModernWarfare2/modernwarfare2@150px-X-175px.jpg);
+}
+
+#plantsvszombies-store-frontG{
+    background-image: url(../img/PlantsVsZombies/PvsZ@150px-X-175px.jpg)
 }
 
 .product-info{
@@ -77,44 +87,79 @@ body{
     box-shadow: 0px 0px 12px 0px rgba(255,255,255,1);
 }
 
-.small-img:nth-of-type(1){
+                                                                                    /* For fallout 76 */
+
+#small-imgs-store-fallout76 > .small-img:nth-child(1){
     background-image: url(../img/Fallout76/fallout76_img1@70px-X-114px.jpg);
 }
 
-.small-img:nth-of-type(2){
+#small-imgs-store-fallout76 > .small-img:nth-child(2){
     background-image: url(../img/Fallout76/fallout76_img2@70px-X-114px.jpg);
 }
 
-.small-img:nth-of-type(3){
+#small-imgs-store-fallout76 > .small-img:nth-child(3){
     background-image: url(../img/Fallout76/fallout76_img3@70px-X-114px.jpg);
 }
 
-.small-img:nth-of-type(4){
+#small-imgs-store-fallout76 > .small-img:nth-child(4){
     background-image: url(../img/Fallout76/fallout76_img4@70px-X-114px.jpg);
 }
 
-.store-image{
+                                                                                    /* For modern warfare 2 */
+
+#small-imgs-store-modernwarfare2 > .small-img:nth-child(1){
+    background-image: url(../img/ModernWarfare2/modernwarfare2_img1@70px-X-114px.jpg);
+}
+
+#small-imgs-store-modernwarfare2 > .small-img:nth-child(2){
+    background-image: url(../img/ModernWarfare2/modernwarfare2_img2@70px-X-114px.jpg);
+}
+
+#small-imgs-store-modernwarfare2 > .small-img:nth-child(3){
+    background-image: url(../img/ModernWarfare2/modernwarfare2_img3@70px-X-114px.jpg);
+}
+
+#small-imgs-store-modernwarfare2 > .small-img:nth-child(4){
+    background-image: url(../img/ModernWarfare2/modernwarfare2_img4@70px-X-114px.jpg);
+}
+
+                                                                                    /* For plants vs zombies */
+
+#small-imgs-store-plantsvszombies > .small-img:nth-child(1){
+    background-image: url(../img/PlantsVsZombies/plantsvszombies_img1@70px-X-114px.jpg);
+}
+
+#small-imgs-store-plantsvszombies > .small-img:nth-child(2){
+    background-image: url(../img/PlantsVsZombies/plantsvszombies_img2@70px-X-114px.jpg);
+}
+
+#small-imgs-store-plantsvszombies > .small-img:nth-child(3){
+    background-image: url(../img/PlantsVsZombies/plantsvszombies_img3@70px-X-114px.jpg);
+}
+
+#small-imgs-store-plantsvszombies > .small-img:nth-child(4){
+    background-image: url(../img/PlantsVsZombies/plantsvszombies_img4@70px-X-114px.jpg);
+}
+
+.store-image-background{
+    display: flex;
+    justify-content: center;
     width: 100vw;
-    background-color: #3682B3;
-    height: 200px;
-    display: flex;
-    justify-content: center;
+    background-image: url(../img/banner-for-store@800px-X-300px.jpg);
 }
 
-.store-nav{
-    width: 80vw;
-    background-color: #818181;
-    height: 35px;
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: 35px 1fr;
-}
-
-.store-button{
-    background-color: #5dabcd;
+.store-image{
+    max-width: 500px;
+    width: inherit;
+    background-image: url(../img/banner@500px-X-300px.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    box-shadow: 0px 0px 13px 9px rgba(0,0,0,0.26);
+    border-left: white solid 2px;
+    border-right: white solid 2px;
 }
 
 .box-of-review-stars{
@@ -134,16 +179,16 @@ body{
     background-position:center top;
 }
 
-#fallout76-in-store{
+#fallout76-store-backG{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Fallout76/banner-fallout76@500px-X-300px.jpg);
 }
 
-#modernwarfare2-in-store{
+#modernwarfare2-store-backG{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/ModernWarfare2/banner-modernwarfare2@500px-X-300px.jpg);
 }
 
-#plantsvszombies-in-store{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Fallout76/banner-fallout76@500px-X-300px.jpg);
+#plantsvszombies-store-backG{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/PlantsVsZombies/banner-plantsvszombies@500px-X-300px.jpg);
 }
 
 .adgroup{
@@ -151,18 +196,16 @@ body{
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 250px;
-    column-gap: 10px;
+    column-gap: 1.5vw;
     justify-self: center;
 }
-
-
 
 .review-part{
     background-color: #3682B3;
     height: auto;
     margin: 20px 0 20px 0;
     display: grid;
-    grid-template-rows: 48px 40px 1fr 1fr 1fr;
+    grid-template-rows: 48px 40px auto;
     width: 100vw;
 }
 
@@ -315,6 +358,7 @@ footer{
 #scrollables{
     flex: 0 0 auto;
     width: 150px;
+    height: auto;
     margin: 0 10px 0 10px;
 }
 
@@ -650,10 +694,19 @@ header{
     color: white;
 }
 
+#text-frontpage-store{
+    align-self: center;
+    margin: 0;
+    color: orangered;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-shadow: 4px 4px 4px orange,rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+}
+
 .text-under-store-product{
     margin: 0 0 0 10px;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .text-under-store-product:nth-of-type(2){
@@ -664,10 +717,6 @@ header{
 .store-title{
     margin: 10px 0 10px 5%;
     font-size: 2.4rem;
-}
-
-.store-button-font{
-    font-size: 2.2rem !important;
 }
 
 #title-for-reviews{
@@ -706,6 +755,8 @@ header{
     font-size: 1.1rem;
     padding: 10px;
     width: 90vw;
+    box-shadow: 0px 0px 20px 0px rgba(54,130,179,1);
+    border: white 2px solid;
 }
 
 #image_button{
@@ -855,7 +906,7 @@ a{
     .homepage{
         display: grid;
         grid-template-columns: 200px auto; 
-        grid-template-rows: 150px auto; 
+        grid-template-rows: 150px auto 50px; 
     }
 
     header{
@@ -941,12 +992,6 @@ a{
         margin-left: 10px !important;
     }
 
-    .itemgrid{
-        display: grid;
-        grid-template-columns: 200px auto;
-        grid-template-rows: 200px 50px calc(100% - 250px);
-    }
-
     .title-first-page{
         text-align: left;
         margin-left: 10px;
@@ -1005,6 +1050,7 @@ a{
         grid-template-rows: 500px 1fr;
         grid-template-columns: 1fr 1fr;
         row-gap: 10px;
+        column-gap: 10px;
     }
 
     main{
@@ -1033,25 +1079,214 @@ a{
     }
 
     .article-for-game:nth-of-type(1){
-        background-image: url(../img/banner@688px-X-175px.jpg);
-        background-color: rgba(0, 0, 0, 0.4);
         height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner@688px-X-175px.jpg);
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .overlay-for-article{
-        background-color: rgba(0, 0, 0, 0.6);
-        height: 100%;
+    .membership-text{
+        color: white;
+        font-size: 2.4rem;
+        text-align: center;
+        text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, 
+        rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px,
+        rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, 
+        rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, 
+        rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, 
+        rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, 
+        rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    }
+
+    .list-of-games{
+        width: auto;
+        margin: 0;
+        grid-template-columns: 1fr 50px;
+    }
+
+    .button-for-games-desktop{
+        border-radius: 40px;
+        justify-self: center;
+        align-self: center;
+        border: white 2px solid;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,76,159,1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 5px 2px rgba(255,76,159,0.5);
+    }
+
+    #chevron-for-desktop-button{
+        margin-left: 5px;
+    }
+
+    .box-of-scrollables-desktop, .box-of-scrollables-desktop-second{
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #on{
+        display: grid;
+    }
+
+    #off{
+        display: none;
+    }
+
+    .eu4{
+        background-image: url(../img/EuropaUniversalis4/europauniversalis4@150px-X-175px.jpg) !important;
+    }
+
+    .storepage{
+        display: grid;
+        grid-template-columns: 200px 1fr; 
+        grid-template-rows: 300px 50px auto 50px; 
         width: 100%;
+    }
+
+    .store-image-background{
+        width: 100%;
+    }
+
+    #for-store{
+        grid-row: span 3;
+    }
+
+    .itemgrid{
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 1fr 50px;
+    }
+
+    #for-articles{
+        grid-row: span 1;
+    }
+
+    .article-footer{
+        grid-row-start: 2;
+    }
+
+    #fallout76-image{
+        margin: 0;
+    }
+
+    .desktop-main{
+        background-color: lightblue;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #fallout76-main-img{
+        background-image: url(../img/Fallout76/banner-for-fallout76@1720px-X-700px.jpg);
+        height: 700px;
+        width: 100%;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 420px auto;
+        grid-template-rows: 700px;
+    }
+
+    .main-title{
+        margin: 20px 0 0 20px;
+        font-size: 4.3rem;
+        color: white;
+        text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, 
+        rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, 
+        rgb(0, 0, 0) -0.653644px -0.756802px 0px, 
+        rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    }
+
+    .description-of-game-text{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        font-size: 1.3rem;
+        width: 390px;
+        letter-spacing: 2px;
+        text-align: left;
+        margin: 0 0 0 10px;
+    }
+
+    .readable-text-box{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .launch{
+        margin-left: 20px;
+    }
+
+    .product-text{
+        color: white;
+        font-size: 1.8rem;
+        height: 200px;
+        width: 300px;
+        text-align: left;
+    }
+
+    .img-with-left-text{
+        display: grid !important;
+        grid-template-columns: 300px auto;
+    }
+
+    .static-nav-bar{
+        width: 100%;
+        height: 75px;
+        background-color: #3682B3;
+        position: sticky;
+        z-index: 1000;
+        border-top: 1px solid white;
+    }
+
+    #fallout76-layout-img{
+        height: 500px;
+        width: 100%;
+        box-shadow: inset 0px 0px 25px -4px rgba(0,0,0,0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fallout76-layout-img:nth-of-type(2){
+        background-image: url(../img/Fallout76/fallout76@1720px-X-500px.jpg)
+    }
+
+    #fallout76-layout-img:nth-of-type(3){
+        background-image: url(../img/Fallout76/fallout76_img2@1720px-X-500px.jpg)
+    }
+
+    .review-part{
+        background-color: transparent;
+        width: 100%;
+        margin: 0;
+        grid-template-rows: 80px 100px auto;
+    }
+
+    .box-of-review-stars{
+        height: 80px;
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .star{
+        font-size: 4rem !important;
+    }
+
+    .review{
         text-align: center;
     }
 
-    .membership-text{
-        position: absolute;
-        color: white;
-        font-size: 2.4rem;
+    .review-holder{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
     }
-
 }

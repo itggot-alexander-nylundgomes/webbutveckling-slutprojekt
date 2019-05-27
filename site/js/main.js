@@ -94,3 +94,16 @@ function changeImgPlantsVsZombies(){
         img.id = 'plantsvszombies_1_image'
     }
 }
+
+function changeGameBox(){
+    box = document.querySelector(".box-of-scrollables-desktop")
+    box2 = document.querySelector(".box-of-scrollables-desktop-second")
+    if (box.id === 'off'){
+        box.id = 'on'
+        box2.id = 'off'
+    }
+    else{
+        box.id = 'off'
+        box2.id = 'on'
+    }
+}
