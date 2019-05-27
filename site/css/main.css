@@ -235,6 +235,7 @@ footer{
     margin-top: auto;
     margin-bottom: 0;
     box-shadow: 0px 0px 10px 0px rgba(150, 215, 255,1);
+    z-index: 100;
 }
 
 #scrollables{
@@ -773,7 +774,7 @@ a{
     }
 
     header{
-        height: 100vh;
+        height: 100%;
         width: 100%;
         grid-row: span 2;
         grid-column: span 1;
@@ -781,18 +782,15 @@ a{
     }
 
     .first-page-img{
-        grid-column: span 1;
-        grid-row: span 1;
         background-color: #5dabcd;
         background-image: none;
         height: 100% !important;
-        width: calc(95% + 4px) !important;
-        margin: 0 auto 0 auto;
+        width: 100%; 
         border: none;
+
     }
 
     .first-page-img-text{
-        text-align: initial;
         margin: 0 0 20px 10px;
     }
 
@@ -829,7 +827,27 @@ a{
     .game-ad{
         height: 100%;
         width: 100%;
-        margin: 0 0 0 0!important;
+        margin:10px!important;
+    }
+
+    #fallout76{
+        background-image: url(../img/Fallout76/fallout76@175px-X-235px.jpg)
+    }
+
+    #candycrush{
+        background-image: url(../img/CandyCrush/candycrush@175px-X-235px.jpg)
+    }
+
+    #plantsvszombies{
+        background-image: url(../img/PlantsVsZombies/PvsZ@175px-X-235px.jpg)
+    }
+
+    #modernwarfare2{
+        background-image: url(../img/ModernWarfare2/modernwarfare2@175px-X-235px.jpg)
+    }
+
+    #europauniversalis4{
+        background-image: url(../img/EuropaUniversalis4/europauniversalis4@175px-X-235px.jpg)
     }
 
     .game{
@@ -849,6 +867,11 @@ a{
         margin-left: 10px;
     }
 
+    footer{
+        box-shadow: none;
+        border: 2px white solid;
+    }
+
     .active-text{
         background-color: rgba(255, 255, 255, 0);
         transition: 0.4s;
@@ -864,22 +887,86 @@ a{
     }
 
     .myGames{
-        height: 100%;
-        width: 100%;
-        margin: 0;
+        margin: 10px;
         background-repeat: no-repeat;
+        height: 235px;
+        width: 175px;
     }
 
     #lib-main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 400px;
-        grid-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .myGames:nth-child(1){
+        background-image: url(../img/Fallout76/fallout76@175px-X-235px.jpg)
+    }
+
+    .myGames:nth-child(2){
+        background-image: url(../img/CandyCrush/candycrush@175px-X-235px.jpg)
+    }
+
+    .myGames:nth-child(3){
+        background-image: url(../img/PlantsVsZombies/PvsZ@175px-X-235px.jpg)
     }
 
     .ontop-main{
         margin: auto 0 auto 0;
         font-size: 1.5rem;
+    }
+
+    .home-main{
+        display: grid;
+        grid-template-rows: 500px 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    main{
+        width: 80%;
+        margin: 10px 10% 0 10%;
+    }
+
+    .desktop-first-image{
+        grid-column: span 2;
+        width: 100%;
+        background-image: url(../img/Fallout76/banner-fallout76@1376px-X-500px.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #on-homepage-img{
+        font-size: 3rem;
+        font-family: 'Lobster', cursive;
+        color: white;
+        text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 
+        1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, 
+        rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px
+        , rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, 
+        rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    }
+
+    .article-for-game:nth-of-type(1){
+        background-image: url(../img/banner@688px-X-175px.jpg);
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay-for-article{
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .membership-text{
+        position: absolute;
+        color: white;
+        font-size: 2.4rem;
     }
 
 }

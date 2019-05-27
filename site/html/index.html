@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper homepage">        
@@ -57,15 +58,23 @@
                 </div>
         </header>
 
-        <div class="centering" id="homepage-image">
-            <div class="first-page-img desktopOff">
+        <div class="centering desktopOff" id="homepage-image">
+            <div class="first-page-img">
                 <h1 class="first-page-img-text desktopOff">Rise up gamers</h1>
                 <h1 class="first-page-img-text mobileOff">Best games on the market!</h1>
             </div>
         </div>
 
-        <main>
-            <h1 class="title-first-page">Populära spel</h1>
+        <div class="first-page-img mobileOff">
+            <h1 class="first-page-img-text mobileOff">Best games on the market!</h1>
+        </div>
+
+        <main class="home-main">
+            <h1 class="title-first-page desktopOff">Populära spel</h1>
+
+            <a href="fallout76.html" class="desktop-first-image mobileOff">
+                <h1 id="on-homepage-img">Are you ready for the wasteland?</h1>
+            </a>
             
         <div class="game-ad-parent desktopOff">
             <a href="fallout76.html"> <section class="game-ad" id="fallout76"></section> </a>
@@ -75,14 +84,21 @@
             <section class="game-ad" id="europauniversalis4"></section>
         </div>
 
-        <div class="game-ad-parent mobileOff">
-                <a href="fallout76.html"><img src="../img/fallout76@175px-X-235px.jpg" class="game-ad"></a>
-                <a href="candycrush.html"><img src="../img/candycrush@175px-X-235px.jpg" class="game-ad"></a>
-                <a href="pvsz.html"><img src="../img/PvsZ@175px-X-235px.jpg" class="game-ad"></a>
-                <div class="game-ad"></div>
-                <div class="game-ad"></div>
-        </div>
-          
+        <!-- <div class="game-ad-parent mobileOff">
+            <a href="fallout76.html"> <section class="game-ad" id="fallout76"></section> </a>
+            <a href="candycrush.html"><section class="game-ad" id="candycrush"></section> </a>
+            <a href="pvsz.html"><section class="game-ad" id="plantsvszombies"></section> </a>
+            <section class="game-ad" id="modernwarfare2"></section>
+            <section class="game-ad" id="europauniversalis4"></section>
+        </div> -->
+
+        <section class="article-for-game mobileOff">
+            <h1 class="overlay-for-article">
+                <h1 class="membership-text">Sign up for a membership today!</h1>
+            </h1>
+        </section>
+        <section class="article-for-game mobileOff"></section>
+
             <div class="more-pls desktopOff">
                     <i class="material-icons" id="more" onclick="dropdown_more()">more_horiz</i>
             </div>
