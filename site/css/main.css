@@ -1072,6 +1072,7 @@ a{
         grid-template-columns: 1fr 1fr;
         row-gap: 10px;
         column-gap: 10px;
+        border: none;
     }
 
     main{
@@ -1086,6 +1087,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.81);
     }
 
     .desktop-first-image-article{
@@ -1095,6 +1097,7 @@ a{
         display: grid;
         grid-template-columns: 420px auto;
         grid-template-rows: 700px;
+        
     }
 
     #on-homepage-img{
@@ -1113,6 +1116,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.81);
     }
 
     .membership-text{
