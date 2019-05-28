@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper itemgrid">
@@ -33,7 +34,7 @@
                      </i>
         </header>
          
-        <header class="upper">
+        <header class="upper" id="for-articles">
          
                          <!-- Mobile stuff -->
          
@@ -44,7 +45,7 @@
                              <h1 class="Pc-titel">Esketit</h1>
                              
                              <div class="nav-grid">
-                                     <div class="nav-button"></div>
+                                     <div class="nav-button non-active-link"></div>
                                      <a href="index.html"><h2 class="nav-text active-text">Hem</h2></a> 
                                      <div class="nav-button non-active-link"></div>
                                      <h2 class="nav-text"> <a href="bibliotek.html">Bibliotek</a> </h2> 
@@ -55,7 +56,7 @@
                          </div>
         </header>
 
-        <div class="centering" id="candycrush-image">
+        <div class="centering desktopOff" id="candycrush-image">
             <picture class="first-img-product" id="candycrush_1_image"> 
                 <div class="img_button" onclick="changeImgCandyCrush()">
                 <i class="material-icons" id="image_button">image</i>
@@ -63,14 +64,17 @@
             </picture>
         </div>
 
-        <div class="centering">
+        <div class="centering desktopOff">
             <div class="launch">
                 <h1 class="launch_text" onclick="launch()">Launch</h1>
             </div>
         </div>
 
-        <h1 id="title-description">What's it all about?</h1>
-        <section class="description-of-game">
+        <div class="desktopOff">
+            <h1 id="title-description">What's it all about?</h1>
+        </div>
+
+        <section class="description-of-game desktopOff">
             <p class="description-of-game-text">
                     Candy Crush Saga is a massively successful, casual puzzle-like game that 
                     has spawned two spin-off games and countless copycats. The game itself is 
@@ -79,7 +83,7 @@
             </p>
         </section>
 
-        <main class="wrapper-for-gameMain">
+        <main class="wrapper-for-gameMain desktopOff">
             <main class="myGame-main">
                 <picture class="img-product" id="candycrush-img"> </picture>
                 <h1 class="text-product"> Sold my house to buy lifes on this game.</h1>
@@ -90,9 +94,11 @@
             </main>
         </main>
 
-        <h1 id="title-for-reviews">Reviews</h1>
+        <div class="desktopOff">
+            <h1 id="title-for-reviews">Reviews</h1>
+        </div>
 
-        <article class="review-part">
+        <article class="review-part desktopOff">
             <div class="review-stars centering">
                 <div class="box-of-review-stars">
                     <i class="material-icons star">star_rate</i>
@@ -117,7 +123,7 @@
                 </h2>
         </article>
 
-        <section class="list-of-games">
+        <section class="list-of-games desktopOff">
             <h3 class="text-for-list">You might also like...</h3>
 
             <nav class="box-games" id="recommended-product-wrapper">
@@ -127,16 +133,99 @@
                 <a href="" id="scrollables"></a>
                 <a href="" id="scrollables"></a>
             </nav>
-
         </section>
 
-        <footer>
+        <!-- Beginning of desktop layout -->
+
+        <main class="desktop-main mobileOff">
+            <picture class="desktop-first-image-article" id="candycrush-main-img">
+                <section class="readable-text-box">
+                    <h1 class="main-title">Candy Crush</h1>
+                        <p class="description-of-game-text">
+                            Candy Crush Saga is a massively successful, casual puzzle-like game that 
+                            has spawned two spin-off games and countless copycats. The game itself is 
+                            incredibly simple, making it a staple time-waster on many people's iPhones and 
+                            iPads.
+                        </p>
+
+                        <div class="launch">
+                            <h1 class="launch_text" onclick="launch()">Launch</h1>
+                        </div>
+                </section>
+            </picture>
+            
+            <nav class="sticky-nav-bar">
+                <h2 class="nav-bar-text"><a href="#link-to-img">Screenshots</a></h2>
+                <h2 class="nav-bar-text"><a href="#link-to-desc">Description</a></h2>
+            </nav>
+            <picture class="layout-img no-grid candycrush-layout-img">
+                <article class="review-part">
+                    <div class="review-stars centering">
+                        <div class="box-of-review-stars">
+                            <i class="material-icons star">star_rate</i>
+                            <i class="material-icons star">star_rate</i>
+                            <i class="material-icons star">star_rate</i>
+                            <i class="material-icons star">star_rate</i>
+                            <i class="material-icons star" id="inactive">star_rate</i>
+                        </div>
+                    </div>
+                    <h2 class="review-title">General review</h2>
+                    <section class="review-holder">
+                    <h2 class="review">
+                        "Candy crush is a terrible and annoying game. In every flipping 
+                        level there is a stupid bomb which I hate."- <i>Nyah446 '1/5'</i>
+                    </h2>
+
+                    <h2 class="review">
+                        "A great game to pass time"- <i>Stumpman 74 '5/5'</i>
+                    </h2>
+                    
+                    <h2 class="review">
+                        "There is more in app purchase n all levels at some points they r repetitive"- <i>Nawaz '2/5'</i>
+                    </h2>
+
+                    </section>
+                </article>
+            </picture>
+
+            <picture class="layout-img candycrush-layout-img" id="link-to-img">
+                <section class="readable-text-box">
+                    <h1 class="product-text">
+                        The perfect game to waste some time! Advance through the levels and beat your friends in 
+                        this all time favourite.
+                    </h1>
+                </section>
+            </picture>
+            
+            <picture class="layout-img candycrush-layout-img">
+                <section class="readable-text-box" id="span-second-in-grid">
+                    <h1 class="product-text" id="second-text">
+                        Over 100 million people can't be wrong! Buy it now.
+                    </h1>
+                </section>
+            </picture>
+
+            <p class="description-of-game-text-lower" id="link-to-desc">
+                Candy Crush Saga is a free-to-play match-three puzzle video game released by 
+                King on April 12, 2012, for Facebook; other versions for iOS, Android, Windows 
+                Phone, and Windows 10 followed. It is a variation of their browser game Candy Crush.[1]
+                In the game, players complete levels by swapping colored pieces of candy on a 
+                game board to make a match of three or more of the same color, eliminating those 
+                candies from the board and replacing them with new ones, which could potentially 
+                create further matches. Matches of four or more candies create unique candies that 
+                act as power-ups with larger board-clearing abilities. Boards have various goals that 
+                must be completed within a fixed number of moves or limited amount of time, such as a 
+                certain score or collecting a specific number of a type of candy.
+            </p>
+        </main>
+        <footer class="article-footer">
             <h3 class="contact-info">
                 Contact:
                 <br>
                 alexnylund99@gmail.com
             </h3>
         </footer>
+        
     </div>
 </body>
 <script src="../js/main.js"></script>
